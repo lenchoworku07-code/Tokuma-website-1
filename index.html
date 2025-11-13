@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TFG General Trading</title>
+<style>
+/* ========== GENERAL STYLE ========== */
+body {
+  font-family: Calibri, sans-serif;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-color: #004d00;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* ========== ROTATING TEXT ========== */
+.marquee {
+  background-color: #e0e0e0;
+  color: gray;
+  font-weight: bold;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 15s linear infinite;
+}
+@keyframes scrollText {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* ========== NAVIGATION ========== */
+nav {
+  background-color: #222;
+  overflow: hidden;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  float: left;
+  position: relative;
+}
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  transition: background-color 0.3s;
+}
+nav a:hover {
+  background-color: green;
+}
+
+/* ========== DROPDOWNS ========== */
+nav li ul {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 200px;
+  z-index: 10;
+}
+nav li:hover ul {
+  display: block;
+}
+nav li ul li {
+  float: none;
+  border-top: 1px solid #444;
+}
+
+/* ========== CONTENT SECTIONS ========== */
+section {
+  width: 80%;
+  margin: 40px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+section h2 {
+  color: #004d00;
+  margin-bottom: 10px;
+}
+
+/* ========== TIMELINE ========== */
+.timeline {
+  margin-top: 20px;
+  padding-left: 20px;
+  border-left: 3px solid #004d00;
+}
+.timeline div {
+  margin: 15px 0;
+}
+.timeline span {
+  color: #004d00;
+  font-weight: bold;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #004d00;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+footer:hover {
+  color: green;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  nav li { float: none; }
+  section { width: 90%; }
+}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header>
+  <h1>TFG General Trading</h1>
+</header>
+
+<!-- ========== MOVING TEXT ========== -->
+<div class="marquee">
+  <span>Welcome to TFG General Trading — Delivering Quality, Integrity, and Growth</span>
+</div>
+
+<!-- ========== NAVIGATION BAR ========== -->
+<nav>
+  <ul>
+    <li><a href="#">Home ▼</a>
+      <ul>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#values">Core Values</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#mission">Mission</a></li>
+    <li><a href="#vision">Vision</a></li>
+    <li><a href="#">Teams ▼</a>
+      <ul>
+        <li><a href="#finance">Finance</a></li>
+        <li><a href="#import">Import & Export</a></li>
+        <li><a href="#it">IT & Procurement</a></li>
+        <li><a href="#cleaning">Cleaning</a></li>
+        <li><a href="#hr">Human Resource</a></li>
+        <li><a href="#store">Store Keeper</a></li>
+        <li><a href="#service">General Service</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<!-- ========== WHO WE ARE ========== -->
+<section id="who">
+  <h2>Who We Are</h2>
+  <p><strong>TFG General Trading</strong> is a leading global trading company offering a wide range of services and products across industries. We connect markets through quality, efficiency, and trust, maintaining the highest standards of business ethics and customer satisfaction.</p>
+</section>
+
+<!-- ========== VISION ========== -->
+<section id="vision">
+  <h2>Our Vision</h2>
+  <p>To become a globally recognized leader in trading and supply chain solutions, driven by innovation, integrity, and customer excellence.</p>
+</section>
+
+<!-- ========== MISSION ========== -->
+<section id="mission">
+  <h2>Our Mission</h2>
+  <p>To empower businesses and industries by delivering reliable trading solutions, superior products, and exceptional value built on transparency and trust.</p>
+</section>
+
+<!-- ========== CORE VALUES ========== -->
+<section id="values">
+  <h2>Our Core Values</h2>
+  <ul>
+    <li><strong>Integrity:</strong> We conduct every transaction with honesty and fairness.</li>
+    <li><strong>Innovation:</strong> We seek new and better ways to serve our clients.</li>
+    <li><strong>Commitment:</strong> We dedicate ourselves to our partners’ success.</li>
+    <li><strong>Teamwork:</strong> We collaborate to achieve excellence.</li>
+  </ul>
+</section>
+
+<!-- ========== TEAMS ========== -->
+<section id="teams">
+  <h2>Our Teams</h2>
+  <p>Our dedicated departments drive the success of TFG General Trading through professionalism and collaboration.</p>
+
+  <ul>
+    <li id="finance"><strong>Finance:</strong> Managing accounts, budgets, and company profitability.</li>
+    <li id="import"><strong>Import & Export:</strong> Handling international trading, logistics, and supply chain management.</li>
+    <li id="it"><strong>IT & Procurement:</strong> Implementing technology solutions and managing vendor sourcing.</li>
+    <li id="cleaning"><strong>Cleaning:</strong> Maintaining hygiene and cleanliness in all facilities.</li>
+    <li id="hr"><strong>Human Resource:</strong> Fostering talent, growth, and employee welfare.</li>
+    <li id="store"><strong>Store Keeper:</strong> Managing inventory, warehousing, and product flow.</li>
+    <li id="service"><strong>General Service:</strong> Providing support services that keep operations efficient.</li>
+  </ul>
+</section>
+
+<!-- ========== GROWTH TIMELINE ========== -->
+<section id="growth">
+  <h2>Growth Timeline</h2>
+  <div class="timeline">
+    <div><span>2020:</span> TFG General Trading was founded with a small but passionate team.</div>
+    <div><span>2021:</span> Expanded into international trading and import/export services.</div>
+    <div><span>2023:</span> Formed partnerships with top manufacturers and distributors.</div>
+    <div><span>2025:</span> Recognized among the top emerging trading companies in the region.</div>
+  </div>
+</section>
+
+<!-- ========== CONTACT US ========== -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Email:</strong> info@tfgtrading.com</p>
+  <p><strong>Phone:</strong> +971 123 456 789</p>
+  <p><strong>Address:</strong> Office 203, Business Tower, Dubai, UAE</p>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  © 2025 TFG General Trading. All Rights Reserved. | Copyright Protected
+</footer>
+
+</body>
+</html>
